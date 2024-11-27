@@ -1,11 +1,10 @@
 
-import Appbar from "./components/page/Appbar";
 import HomePage from "./components/HomePage";
 import { useAuth } from "./context/AuthProvider";
 
 
 function App() {
-  const {loading,data}=useAuth();
+  const { loading, data } = useAuth();
   console.log(data);
   console.log(loading);
 
@@ -14,9 +13,9 @@ function App() {
 
     <div>
 
-      <Appbar />  
 
-      <HomePage  />  
+
+      <HomePage />
 
 
     </div>

@@ -1,5 +1,7 @@
 import React from "react";
 import VideoCard from "./VideoCard";
+// import {BrowserRouter,Routes,Router} from "react-router-dom";
+
 
 
 const VIDEOS = [{
@@ -132,7 +134,7 @@ const VIDEOS = [{
 
 
 export default function VideoGrid() {
-    return <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-5/6  justify-items-end gap-1 ">
+    return <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-fit rounded-lg justify-items-end gap-1 ">
         {VIDEOS.map((video, index) =>
             <div>
                 <VideoCard
