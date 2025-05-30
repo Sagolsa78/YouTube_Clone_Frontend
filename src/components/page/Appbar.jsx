@@ -7,19 +7,19 @@ import { IoMic } from "react-icons/io5";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 
 function Appbar({ isSidebarOpen, toggleSidebar }) {
-  // Changed: Added `isSidebarOpen` and `toggleSidebar` as props for Sidebar control
+ 
 
   return (
-    <div className="flex sticky top-0 left-0 right-0 z-50 items-center justify-around px-4 py-2 bg-white">
-      {/* Sidebar Toggle Button */}
+    <div className="flex sticky  sm:flex-row sm:justify-between sm:gap-0 top-0 left-0 right-0 z-50 items-center justify-around px-4 py-2 bg-white">
+      
       <div
-        onClick={toggleSidebar} // Changed: Added `toggleSidebar` to handle click events
+        onClick={toggleSidebar} 
         id="sidebar-toggle"
         className="flex items-center space-x-4 cursor-pointer"
       >
         <TfiMenu
           className="text-xl hover:bg-gray-200 duration-200"
-          title={isSidebarOpen ? "Close Sidebar" : "Open Sidebar"} // Changed: Added dynamic tooltip based on `isSidebarOpen`
+          title={isSidebarOpen ? "Close Sidebar" : "Open Sidebar"} 
         />
         <img
           src="YouTube_Premium_logo.svg.png"

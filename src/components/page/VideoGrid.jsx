@@ -135,10 +135,10 @@ const VIDEOS = [{
 
 export default function VideoGrid() {
     return <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-fit rounded-lg justify-items-end gap-1 ">
-        {VIDEOS.map((video, index) =>
-            <div>
+        {VIDEOS.map((video,index) =>
+            <div key={index}>
                 <VideoCard
-                key={index}
+                
                     title={video.title}
                     thumbnail={video.thumbnail}
                     Author_photo={video.Author_photo} 

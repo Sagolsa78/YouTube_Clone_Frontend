@@ -2,16 +2,14 @@ import Sidebar from "./page/sidebar";
 import VideoGrid from "./page/VideoGrid";
 import Suggestionbar from "./page/suggestionbar";
 import Appbar from "./page/Appbar";
-import { useState } from "react";
 import SidebarCLosed from "./page/SidebarCLosed";
+import { useSidebar } from "./page/SIdebarContext";
 
 
 const HomePage = () => {
-  const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const {isSidebarOpen, toggleSidebar} = useSidebar();
 
-  const toggleSidebar = () => {
-    setSidebarOpen(!isSidebarOpen);
-  };
+ 
 
   return (
     <div className="">

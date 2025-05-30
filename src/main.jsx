@@ -1,13 +1,17 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import AuthProvider from './context/AuthProvider.jsx'
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
+import App from './App.jsx';
+import { SidebarProvider } from './components/page/SIdebarContext.jsx';
 
-createRoot(document.getElementById('root')).render(
-  <AuthProvider>
-    <App />
-  </AuthProvider>
-    
+const root = createRoot(document.getElementById('root'));
 
-)
+root.render(
+  <React.StrictMode>
+    <SidebarProvider>
+
+      <App />
+
+    </SidebarProvider>
+  </React.StrictMode>
+);

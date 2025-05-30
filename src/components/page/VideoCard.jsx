@@ -2,7 +2,7 @@ import React from "react";
 
 function VideoCard(props){
 
-    return <div className=" max-w-sm p-2 rounded-lg cursor-pointer transition-transform duration-300 ease-in-out transform hover:-translate-y-1 hover:bg-gray-200">
+    return <div className=" max-w-md p-2 rounded-lg cursor-pointer transition-transform duration-300 ease-in-out transform hover:-translate-y-1 hover:bg-gray-200">
         <div>
             <img className="rounded-lg w-full h-48 object-cover"
             
