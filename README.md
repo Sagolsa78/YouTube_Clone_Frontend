@@ -38,7 +38,7 @@ A responsive YouTube-inspired video browsing application built using **React**, 
 Clone the repo and install dependencies:
 
 ```bash
-git clone https://github.com/your-username/youtube-clone.git
+git clone https://github.com/Sagolsa78/youtube-clone.git
 cd youtube-clone
 
 # Install dependencies
